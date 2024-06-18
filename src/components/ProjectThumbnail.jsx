@@ -1,12 +1,17 @@
 import React from 'react'
 
-const ProjectThumbnail = ({img, text}) => {
+const ProjectThumbnail = ({name, img, url, text}) => {
   return (
     <div className='project-thumbnail'>
       <div className='project-thumbnail-img'>
-        <img src={img} alt="" />
+        <a href={url} target="_blank" rel="noreferrer">
+          <img src={img} alt={name} />
+        </a>
       </div>
-      <div className='project-thumbnail-text'>
+      <div className='project-name'>
+        {name}
+      </div>
+      <div className='project-thumbnail-content'>
         {text}
       </div>
     </div>

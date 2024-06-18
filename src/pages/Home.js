@@ -16,10 +16,10 @@ import Work1Img from "../img/sample/sample-work1.png"
 import Work2Img from "../img/sample/sample-work2.png"
 import Work3Img from "../img/sample/sample-work3.png"
 
-const workObj = [
-  { img: Work1Img, text: "This is an explanation of work1. Explain about this work such as when, how I made it." },
-  { img: Work2Img, text: "This is an explanation of work2. Explain about this work such as when, how I made it." },
-  { img: Work3Img, text: "This is an explanation of work3. Explain about this work such as when, how I made it." }
+const projects = [
+  { name: "Work1", img: Work1Img, url:"#", text: "This is an explanation of work1. Explain about this work such as when, how I made it." },
+  { name: "Work2", img: Work2Img, url:"#", text: "This is an explanation of work2. Explain about this work such as when, how I made it." },
+  { name: "Work3", img: Work3Img, url:"#", text: "This is an explanation of work3. Explain about this work such as when, how I made it." }
 ]
 
 const Home = () => {
@@ -63,9 +63,11 @@ const Home = () => {
       <Button title="About me" pass="/about" />
       <Label title="Work" />
       <div className="project-thumbnail-wrapper">
-        <ProjectThumbnail img={workObj[0].img} text={workObj[0].text} />
-        <ProjectThumbnail img={workObj[1].img} text={workObj[1].text} />
-        <ProjectThumbnail img={workObj[2].img} text={workObj[2].text} />
+        {projects.map(project => {
+          return (
+            <ProjectThumbnail name={project.name} img={project.img} url={project.url} text={project.text} />
+          )
+        })}
       </div>
       <Button title="Work" pass="/work"/>
       <Contact />

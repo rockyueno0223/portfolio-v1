@@ -100,18 +100,25 @@ footer{
 
 // Project Thumbnail
 .project-thumbnail{
-  width: 33%;
+  width: 30%;
 }
 
 .project-thumbnail-img{
   width: 100%;
+  border: 2px solid $theme-green;
 
   img{
     width: 100%;
   }
 }
 
-.project-thumbnail-text{
+.project-name{
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.project-thumbnail-content{
   padding: 10px;
   text-align: left;
 }
