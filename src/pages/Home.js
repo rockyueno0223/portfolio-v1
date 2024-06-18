@@ -1,6 +1,8 @@
 import React from "react";
+
 import Label from "../components/Label";
 import Button from "../components/Button";
+import ProjectThumbnail from "../components/ProjectThumbnail";
 import Contact from "../pages/Contact";
 
 import { FaGithub } from "react-icons/fa";
@@ -9,7 +11,6 @@ import { BiLogoDevTo } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
 
 import AvatarLink from "../img/about/avatar.png";
-import ProjectThumbnail from "../components/ProjectThumbnail";
 
 import Work1Img from "../img/sample/sample-work1.png"
 import Work2Img from "../img/sample/sample-work2.png"
