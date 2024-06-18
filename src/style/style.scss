@@ -60,7 +60,8 @@ footer{
 .label{
   background-color: $theme-grey;
   border-left: 12px solid $theme-green;
-  width: 80%;
+  width: 96%;
+  max-width: 1600px;
   margin: 60px auto;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -179,8 +180,12 @@ footer{
 
 .home-about-text{
   width: 60%;
-  padding: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: left;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .home-about-img{
