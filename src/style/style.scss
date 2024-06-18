@@ -1,0 +1,268 @@
+body{
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 96%;
+  max-width: 1000px;
+}
+
+// Set theme color
+$theme-grey: #d9dadc;
+$theme-green: #b1f9ac;
+
+// Components
+
+// Header
+header{
+  background-color: $theme-green;
+  //height: 50px;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 60px;
+}
+
+li{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 40px;
+}
+
+// Footer
+footer{
+  background-color: $theme-grey;
+  height: 80px;
+
+  p{
+    font-size: 10px;
+    line-height: 80px;
+  }
+}
+
+// Label
+.label{
+  background-color: $theme-grey;
+  border-left: 12px solid $theme-green;
+  width: 80%;
+  margin: 60px auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  p{
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+// Button
+.button{
+  background-color: $theme-grey;
+  width: 300px;
+  height: 64px;
+  margin: 60px auto 80px auto;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 0 $theme-green;
+
+  &:hover{
+    background-color: lighten($color: $theme-grey, $amount: 5%);
+  }
+  &:active{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+  }
+
+  p{
+    line-height: 64px;
+  }
+}
+
+// Project Thumbnail
+.project-thumbnail{
+  width: 33%;
+}
+
+.project-thumbnail-img{
+  width: 100%;
+
+  img{
+    width: 100%;
+  }
+}
+
+.project-thumbnail-text{
+  padding: 10px;
+  text-align: left;
+}
+
+// Project Detail
+.project-detail{
+  width: 45%;
+  flex-basis: 50%;
+}
+
+.project-detail-img {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.project-detail-text {
+  padding: 8px;
+  text-align: left;
+}
+
+// Pages
+
+//Home
+//Main Visual
+.main-visual{
+  background-color: $theme-grey;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title{
+  h2{
+    font-size: 28px;
+  }
+  h1{
+    font-size: 88px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    line-height: 0.1em;
+  }
+}
+.link-wrapper{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: flex;
+
+  a{
+    margin-left: 6px;
+  }
+}
+
+// About Section
+.home-about-item{
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.home-about-text{
+  width: 60%;
+  padding: 10px;
+  text-align: left;
+}
+
+.home-about-img{
+  width: 40%;
+  padding: 8px;
+
+  img{
+    max-width: 100%;
+    border-radius: 50%;
+  }
+}
+
+// Work Section
+.project-thumbnail-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+// About Page
+.profile{
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  width: 60%;
+  padding: 80px 40px;
+  text-align: left;
+}
+
+.about-img {
+  width: 40%;
+  padding: 3%;
+
+  img {
+    width: 280px;
+    max-width: 100%;
+  }
+}
+
+.history-content{
+  padding: 5px;
+  margin-bottom: 18px;
+}
+
+.history-header{
+  display: flex;
+  justify-content: start;
+
+  svg{
+    width: 60px;
+  }
+}
+
+.history-title{
+  padding: 16px;
+}
+
+.history-text{
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 12px;
+}
+
+// Work Page
+.project-detail-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+// Contact Page
+.contact-me {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.contact-text {
+  margin-bottom: 0;
+}
