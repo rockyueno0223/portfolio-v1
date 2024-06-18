@@ -46,9 +46,14 @@ const Home = () => {
       </div>
       <Label title="About" />
       <div className="home-about-item">
-        <div className="home-about-text">
-          I'm Rocky.<br />
-          I'm a front-end engineer and a passionate learner who have fun for learning!
+        <div className="home-about-content">
+          <p className="my-name">Hi, I'm Rocky!</p>
+          <p className="text">
+            I'm a front-end engineer who have experience of back-end development and a passionate learner who have fun for learning!
+          </p>
+          <div className="skills">
+            Skills: HTML CSS JavaScript React Vue.js Node.js PHP Java
+          </div>
         </div>
         <div className="home-about-img">
           <img src={AvatarLink} alt=""/>
