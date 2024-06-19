@@ -306,6 +306,31 @@ footer{
   padding-top: 12px;
 }
 
+.skill-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 36px;
+}
+
+.skill-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.skill-item{
+  display: flex;
+  margin-right: 10px;
+}
+
+.skill-name{
+  padding-top: 3px;
+  padding-left: 2px;
+}
+
 // Work Page
 .project-detail-wrapper {
   width: 100%;
