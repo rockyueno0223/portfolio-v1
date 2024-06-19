@@ -23,6 +23,7 @@ import { SiMongodb } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 
 import SampleIcon from "../img/sample/sample-icon.png";
+import AboutImg from "../img/about/aboutme.jpg";
 
 const About = () => {
   return (
@@ -35,7 +36,7 @@ const About = () => {
             I'm a front-end engineer and a passionate learner who have fun for learning!
           </div>
           <div className="about-img">
-            <img src={SampleIcon} alt=""/>
+            <img src={AboutImg} alt="about me"/>
           </div>
         </div>
         <div className="history">
