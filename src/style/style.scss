@@ -25,6 +25,7 @@ li {
 // Set theme color
 $theme-grey: #d9dadc;
 $theme-green: #b1f9ac;
+$border-grey: darken($color: $theme-grey, $amount: 25%);
 
 // Components
 
@@ -81,7 +82,7 @@ footer{
 .label{
   background-color: $theme-grey;
   border-left: 12px solid $theme-green;
-  width: 96%;
+  width: 98%;
   max-width: 1600px;
   margin: 60px auto;
   padding-top: 14px;
@@ -121,14 +122,15 @@ footer{
 
 // Project Thumbnail
 .project-thumbnail{
-  width: 30%;
+  width: 32%;
 }
 
 .project-thumbnail-img{
   width: 100%;
-  border: 2px solid $theme-green;
+  border: 1px solid $border-grey;
 
   img{
+    display: block;
     width: 100%;
   }
 }
@@ -140,7 +142,8 @@ footer{
 }
 
 .project-thumbnail-content{
-  padding: 10px;
+  font-size: 18px;
+  padding: 8px;
   text-align: left;
 }
 
@@ -148,6 +151,7 @@ footer{
 .project-detail{
   display: flex;
   width: 100%;
+  border-bottom: 1px solid $border-grey;
 
   .odd{
     background-color: $theme-green;
@@ -162,6 +166,7 @@ footer{
   width: 50%;
 
   img {
+    display: block;
     width: 100%;
   }
 }
@@ -188,6 +193,7 @@ footer{
   }
 
   .text{
+    font-size: 18px;
     margin-top: 30px;
   }
 }
@@ -275,6 +281,7 @@ footer{
 
 .about-text {
   width: 60%;
+  font-size: 22px;
   padding: 80px 40px;
   text-align: left;
 }
@@ -303,6 +310,7 @@ footer{
 }
 
 .history-title{
+  font-size: 22px;
   padding: 16px;
 }
 
@@ -329,12 +337,12 @@ footer{
 
 .skill-item{
   display: flex;
-  margin-right: 10px;
+  margin-right: 16px;
 }
 
 .skill-name{
   padding-top: 3px;
-  padding-left: 2px;
+  padding-left: 4px;
 }
 
 // Work Page
@@ -343,7 +351,7 @@ footer{
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  border: 1px solid darken($color: $theme-grey, $amount: 25%);
+  border: 1px solid $border-grey;
 }
 
 // Contact Page
@@ -354,4 +362,170 @@ footer{
 
 .contact-text {
   margin-bottom: 0;
+}
+
+// media query
+@media screen and (max-width: 1023px) {
+  // About Page
+  .skill-item {
+    margin-right: 6px;
+  }
+
+  .skill-name {
+    padding-left: 1px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body{
+    //background-color: aqua;
+    font-size: 18px;
+  }
+
+  // Components
+
+  // Label
+  .label{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  // Project Thumbnail
+  .project-thumbnail{
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .project-name{
+    padding-top: 4px;
+  }
+
+  .project-thumbnail-content{
+    padding-top: 2px;
+  }
+
+  // Project Detail
+  .project-detail{
+    flex-direction: column;
+  }
+
+  .project-detail-img{
+    width: 100%;
+  }
+
+  .project-detail-content{
+    width: 100%;
+
+    .title{
+      font-size: 22px;
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+
+    .skills{
+      margin-top: 8px;
+    }
+
+    .text{
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+  }
+
+  // Pages
+
+  // Home Page
+  .main-visual{
+    height: 640px;
+  }
+
+  .title {
+    h2 {
+      font-size: 24px;
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: 44px;
+    }
+  }
+
+  .home-about-item{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .home-about-img{
+    width: 300px;
+  }
+
+  .home-about-content {
+    width: 100%;
+    padding-top: 20px;
+
+    .my-name {
+      font-size: 38px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .text {
+      margin-top: 18px;
+      margin-bottom: 18px;
+    }
+
+    .skills {
+      font-size: 16px;
+      color: darken($color: $theme-grey, $amount: 45%);
+    }
+  }
+
+  .project-thumbnail-wrapper{
+    flex-direction: column;
+  }
+
+  // About Page
+  .profile{
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 24px auto;
+  }
+
+  .about-img{
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .about-text{
+    width: 100%;
+    padding: 10px 8px;
+  }
+
+  .history-text{
+    padding-left: 6px;
+  }
+
+  .skill-wrapper{
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .skill-row{
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .skill-item{
+    margin-bottom: 10px;
+  }
+
+  // Work Page
+  .project-detail-wrapper{
+    width: 80%;
+    margin: 0 auto;
+  }
 }

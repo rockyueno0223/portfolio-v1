@@ -13,6 +13,7 @@ import { FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoVue } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
 import { SiPhp } from "react-icons/si";
@@ -79,69 +80,73 @@ const About = () => {
         <div className="skill-wrapper">
           <div className="skill-row">
             <div className="skill-item">
-              <FaHtml5 size={26}/>
+              <FaHtml5 size={24}/>
               <div className="skill-name">HTML</div>
             </div>
             <div className="skill-item">
-              <FaCss3Alt size={26}/>
+              <FaCss3Alt size={24}/>
               <div className="skill-name">CSS</div>
             </div>
             <div className="skill-item">
-              <SiSass size={26}/>
+              <SiSass size={24}/>
               <div className="skill-name">SASS</div>
             </div>
             <div className="skill-item">
-              <SiTailwindcss size={26}/>
+              <SiTailwindcss size={24}/>
               <div className="skill-name">Tailwind</div>
             </div>
             <div className="skill-item">
-              <FaBootstrap size={26}/>
+              <FaBootstrap size={24}/>
               <div className="skill-name">Bootstrap</div>
             </div>
             <div className="skill-item">
-              <IoLogoJavascript size={26}/>
+              <IoLogoJavascript size={24}/>
               <div className="skill-name">JavaScript</div>
             </div>
             <div className="skill-item">
-              <SiTypescript size={26}/>
+              <SiTypescript size={24}/>
               <div className="skill-name">TypeScript</div>
+            </div>
+            <div className="skill-item">
+              <FaReact size={24}/>
+              <div className="skill-name">React</div>
+            </div>
+            <div className="skill-item">
+              <RiNextjsFill size={24}/>
+              <div className="skill-name">Next.js</div>
             </div>
           </div>
           <div className="skill-row">
             <div className="skill-item">
-              <FaReact size={26}/>
-              <div className="skill-name">React</div>
-            </div>
-            <div className="skill-item">
-              <IoLogoVue size={26}/>
+              <IoLogoVue size={24}/>
               <div className="skill-name">Vue.js</div>
             </div>
             <div className="skill-item">
-              <FaNodeJs size={26}/>
+              <FaNodeJs size={24}/>
               <div className="skill-name">Node.js</div>
             </div>
             <div className="skill-item">
-              <SiPhp size={26}/>
+              <SiPhp size={24}/>
               <div className="skill-name">PHP</div>
             </div>
             <div className="skill-item">
-              <FaLaravel size={26}/>
+              <FaLaravel size={24}/>
               <div className="skill-name">Laravel</div>
             </div>
             <div className="skill-item">
-              <RiJavaLine size={26}/>
+              <RiJavaLine size={24}/>
               <div className="skill-name">Java</div>
             </div>
             <div className="skill-item">
-              <SiMysql size={26}/>
+              <SiMysql size={24}/>
               <div className="skill-name">MySQL</div>
             </div>
             <div className="skill-item">
-              <SiMongodb size={26}/>
+              <SiMongodb size={24}/>
               <div className="skill-name">MongoDB</div>
             </div>
             <div className="skill-item">
-              <SiPostgresql size={26}/>
+              <SiPostgresql size={24}/>
               <div className="skill-name">PostgreSQL</div>
             </div>
           </div>
