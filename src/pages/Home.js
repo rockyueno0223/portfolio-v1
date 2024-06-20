@@ -5,11 +5,6 @@ import Button from "../components/Button";
 import ProjectThumbnail from "../components/ProjectThumbnail";
 import Contact from "../pages/Contact";
 
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { BiLogoDevTo } from "react-icons/bi";
-import { MdEmail } from "react-icons/md";
-
 import AvatarLink from "../img/about/avatar.png";
 
 import Work1Img from "../img/sample/sample-work1.png"
@@ -29,20 +24,6 @@ const Home = () => {
         <div className="title">
           <h2>Front-end Engineer</h2>
           <h1>Rocky's Portfolio</h1>
-        </div>
-        <div className="link-wrapper">
-          <a href="https://github.com/rockyueno0223" target="_blank" rel="noreferrer">
-            <FaGithub size={30} />
-          </a>
-          <a href="#" target="_blank" rel="noreferrer">
-            <FaLinkedin size={30} />
-          </a>
-          <a href="https://dev.to/rockyueno0223" target="_blank" rel="noreferrer">
-            <BiLogoDevTo size={30} />
-          </a>
-          <a href="mailto:rockyueno@gmail.com">
-            <MdEmail size={30} />
-          </a>
         </div>
       </div>
       <Label title="About" />

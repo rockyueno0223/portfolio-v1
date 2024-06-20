@@ -22,7 +22,6 @@ import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 
-import SampleIcon from "../img/sample/sample-icon.png";
 import AboutImg from "../img/about/aboutme.jpg";
 
 const About = () => {
