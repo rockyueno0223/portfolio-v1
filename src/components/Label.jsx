@@ -4,7 +4,7 @@ const Label = ({title}) => {
   return (
     <div>
       <div className='label'>
-        <p>{title}</p>
+        <h3>{title}</h3>
       </div>
     </div>
   )

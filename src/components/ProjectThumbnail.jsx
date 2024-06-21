@@ -9,7 +9,7 @@ const ProjectThumbnail = ({name, img, url, text}) => {
         </a>
       </div>
       <div className='project-name'>
-        {name}
+        <h4>{name}</h4>
       </div>
       <div className='project-thumbnail-content'>
         {text}

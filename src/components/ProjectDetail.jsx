@@ -23,7 +23,7 @@ const ProjectDetail = ({ id, name, img, url, skills, text }) => {
           </a>
       </div>
       <div className={ProjectDetailContentClass({id})}>
-        <h3 className='title'>{name}</h3>
+        <h4 className='title'>{name}</h4>
         <p className='skills'>{skillText}</p>
         <p className='text'>{text}</p>
       </div>

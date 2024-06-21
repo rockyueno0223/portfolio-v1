@@ -115,8 +115,9 @@ footer{
   padding-top: 14px;
   padding-bottom: 14px;
 
-  p{
+  h3{
     font-size: 30px;
+    font-weight: normal;
     letter-spacing: 0.2em;
     margin-top: auto;
     margin-bottom: auto;
@@ -163,9 +164,13 @@ footer{
 }
 
 .project-name{
-  padding-top: 10px;
   font-size: 24px;
   font-weight: 600;
+
+  h4{
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .project-thumbnail-content{
@@ -478,7 +483,9 @@ footer{
   }
 
   .project-name{
-    padding-top: 4px;
+    h4{
+      margin-top: 4px;
+    }
   }
 
   .project-thumbnail-content{
