@@ -14,6 +14,7 @@ a {
 ul,
 li {
   list-style: none;
+  margin: 0;
 }
 
 .container {
@@ -31,27 +32,53 @@ $border-grey: darken($color: $theme-grey, $amount: 25%);
 
 // Header
 header{
-  background-color: $theme-green;
-  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.menu{
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  cursor: pointer;
+
+  span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: $border-grey;
+    border-radius: 0.2rem;
+  }
 }
 
 nav{
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $theme-green;
 
   ul {
-    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     li {
       font-weight: bold;
-      padding: 0 40px;
 
-      a:hover {
-        border-bottom: 2px solid black;
+      a{
+        display: block;
+        width: max-content;
+        margin: 0 1rem;
+        border-bottom: 2px solid $theme-green;
+
+        &:hover{
+          border-bottom: 2px solid black;
+        }
       }
     }
   }
@@ -378,11 +405,65 @@ footer{
 
 @media screen and (max-width: 767px) {
   body{
-    //background-color: aqua;
     font-size: 18px;
   }
 
   // Components
+
+  // Header
+  .menu {
+    display: flex;
+  }
+
+  .menu.open {
+    span{
+      position: absolute;
+    }
+
+    span:nth-of-type(1) {
+      top: 0.75rem;
+      transform: rotate(45deg);
+    }
+
+      span:nth-of-type(2) {
+        display: none;
+        transform: rotate(45deg);
+      }
+
+    span:nth-of-type(3) {
+      top: 0.75rem;
+      transform: rotate(-45deg);
+    }
+  }
+
+  nav{
+    flex-direction: column;
+    align-items: start;
+
+    ul{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      li{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        a{
+          margin: 0.5rem 0.5rem;
+        }
+      }
+    }
+
+    ul.open{
+      display: flex;
+      padding-left: 0;
+    }
+  }
 
   // Label
   .label{
