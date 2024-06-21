@@ -21,7 +21,7 @@ const Work = () => {
         <div className="project-detail-wrapper">
           {projects.map(project => {
           return (
-            <ProjectDetail id={project.id} name={project.name} img={project.img} url={project.url} skills={project.skills} text={project.text} />
+            <ProjectDetail key={project.id} id={project.id} name={project.name} img={project.img} url={project.url} skills={project.skills} text={project.text} />
           )
           })}
         </div>

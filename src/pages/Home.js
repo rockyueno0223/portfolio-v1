@@ -46,7 +46,7 @@ const Home = () => {
       <div className="project-thumbnail-wrapper">
         {projects.map(project => {
           return (
-            <ProjectThumbnail name={project.name} img={project.img} url={project.url} text={project.text} />
+            <ProjectThumbnail key={project.name} name={project.name} img={project.img} url={project.url} text={project.text} />
           )
         })}
       </div>
