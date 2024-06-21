@@ -15,7 +15,7 @@ const projects = [
 
 const Work = () => {
   return (
-    <div>
+    <>
       <Label title="Work" />
       <div className="container">
         <div className="project-detail-wrapper">
@@ -26,7 +26,7 @@ const Work = () => {
           })}
         </div>
       </div>
-    </div>
+    </>
   )
 }
 export default Work;

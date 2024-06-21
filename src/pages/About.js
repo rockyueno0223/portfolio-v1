@@ -27,7 +27,7 @@ import AboutImg from "../img/about/aboutme.jpg";
 
 const About = () => {
   return (
-    <div>
+    <>
       <Label title="About" />
       <div className="container">
         <div className="profile">
@@ -152,7 +152,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 export default About;

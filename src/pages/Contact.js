@@ -4,7 +4,7 @@ import Button from "../components/Button";
 
 const Contact = () => {
   return (
-    <div>
+    <>
       <Label title="Contact" />
       <p className="contact-me">
         Contact me!
@@ -14,7 +14,7 @@ const Contact = () => {
         Please contact me if you’re even slightly intrested.
       </p>
       <Button title="Contact" pass="mailto:rockyueno@gmail.com"/>
-    </div>
+    </>
   )
 }
 export default Contact;

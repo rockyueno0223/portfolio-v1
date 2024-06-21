@@ -7,33 +7,31 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div>
-      <footer>
-        <div className="link-wrapper">
-          <div className='link-item'>
-            <a href="https://github.com/rockyueno0223" target="_blank" rel="noreferrer">
-              <FaGithub size={38} />
-            </a>
-          </div>
-          <div className='link-item'>
-            <a href="#" target="_blank" rel="noreferrer">
-              <FaLinkedin size={38} />
-            </a>
-          </div>
-          <div className='link-item'>
-            <a href="https://dev.to/rockyueno0223" target="_blank" rel="noreferrer">
-              <BiLogoDevTo size={38} />
-            </a>
-          </div>
-          <div className='link-item'>
-            <a href="mailto:rockyueno@gmail.com">
-              <MdEmail size={38} />
-            </a>
-          </div>
+    <footer>
+      <div className="link-wrapper">
+        <div className='link-item'>
+          <a href="https://github.com/rockyueno0223" target="_blank" rel="noreferrer">
+            <FaGithub size={38} />
+          </a>
         </div>
-        <p>Copyright©Rocky. All Rights Reserved.</p>
-      </footer>
-    </div>
+        <div className='link-item'>
+          <a href="#" target="_blank" rel="noreferrer">
+            <FaLinkedin size={38} />
+          </a>
+        </div>
+        <div className='link-item'>
+          <a href="https://dev.to/rockyueno0223" target="_blank" rel="noreferrer">
+            <BiLogoDevTo size={38} />
+          </a>
+        </div>
+        <div className='link-item'>
+          <a href="mailto:rockyueno@gmail.com">
+            <MdEmail size={38} />
+          </a>
+        </div>
+      </div>
+      <p>Copyright©Rocky. All Rights Reserved.</p>
+    </footer>
   )
 }
 

@@ -19,7 +19,7 @@ const projects = [
 
 const Home = () => {
   return (
-    <div>
+    <>
       <div className="main-visual">
         <div className="title">
           <h2>Front-end Engineer</h2>
@@ -52,7 +52,7 @@ const Home = () => {
       </div>
       <Button title="Work" pass="/work"/>
       <Contact />
-    </div>
+    </>
   )
 }
 export default Home;
