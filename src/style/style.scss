@@ -384,6 +384,18 @@ footer{
   border: 1px solid $border-grey;
 }
 
+// Blog Page
+.my-blog{
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.blog-text{
+
+  span{
+    font-weight: bold;
+  }
+}
 // Contact Page
 .contact-me {
   font-weight: bold;

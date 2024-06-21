@@ -11,7 +11,7 @@ const Contact = () => {
       </p>
       <p className="contact-text">
         I’m looking forward to having a wonderful time with you!<br/>
-        Please contact me if you’re even slightly intrested.
+        Please contact me if you’re even slightly interested.
       </p>
       <Button title="Contact" pass="mailto:rockyueno@gmail.com"/>
     </>
