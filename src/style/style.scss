@@ -37,23 +37,23 @@ header{
 
 nav{
   height: 100%;
-}
 
-ul{
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
+  ul {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 
-li{
-  font-weight: bold;
-  padding: 0 40px;
+    li {
+      font-weight: bold;
+      padding: 0 40px;
 
-  a:hover{
-    border-bottom: 2px solid black;
+      a:hover {
+        border-bottom: 2px solid black;
+      }
+    }
   }
 }
 
