@@ -19,7 +19,7 @@ const ProjectDetail = ({ id, name, img, url, skills, text }) => {
     <div className='project-detail'>
       <div className='project-detail-img'>
         <a href={url} target="_blank" rel="noreferrer">
-            <img src={img} alt={name} />
+            <img src={img} alt={name} loading='lazy'/>
           </a>
       </div>
       <div className={ProjectDetailContentClass({id})}>

@@ -38,7 +38,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home-about-img">
-          <img src={AvatarLink} alt="avatar"/>
+          <img src={AvatarLink} alt="avatar" loading="lazy"/>
         </div>
       </div>
       <Button title="About me" pass="/about" />

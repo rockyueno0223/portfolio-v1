@@ -5,7 +5,7 @@ const ProjectThumbnail = ({name, img, url, text}) => {
     <div className='project-thumbnail'>
       <div className='project-thumbnail-img'>
         <a href={url} target="_blank" rel="noreferrer">
-          <img src={img} alt={name} />
+          <img src={img} alt={name} loading='lazy'/>
         </a>
       </div>
       <div className='project-name'>

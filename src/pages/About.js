@@ -36,7 +36,7 @@ const About = () => {
             I'm a front-end engineer and a passionate learner who have fun for learning!
           </div>
           <div className="about-img">
-            <img src={AboutImg} alt="about me"/>
+            <img src={AboutImg} alt="about me" loading="lazy"/>
           </div>
         </div>
         <div className="history">
