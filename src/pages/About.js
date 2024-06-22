@@ -32,8 +32,9 @@ const About = () => {
       <div className="container">
         <div className="profile">
           <div className="about-text">
-            I'm Rocky.<br />
-            I'm a front-end engineer and a passionate learner who have fun for learning!
+            I'm a front-end engineer who have work experience of back-end development and eager to learn new technologies.<br />
+            I'm happy to this job because I like to make something useful or convenient and make people's lives better. Also, learning new technologies is really interesting for me.<br />
+            I'd love to travel foreign countries. I've visited 16 countries and want more. I'm always exploring something new!
           </div>
           <div className="about-img">
             <img src={AboutImg} alt="about me" loading="lazy"/>
@@ -48,7 +49,7 @@ const About = () => {
               </div>
             </div>
             <div className="history-text">
-              This is a content about university.
+              I majored in International politics and relationship in university because I wanted to study International issues. Also, I joined English drama club and performed plays. I thought I wanted to live in other country from this time.
             </div>
           </div>
           <div className="history-content">
@@ -59,7 +60,7 @@ const About = () => {
               </div>
             </div>
             <div className="history-text">
-              This is a content about work.
+              I worked for a software company in Japan as a back-end engineer. I used HTML, CSS, JavaScript, Vue.js in front-end, and Java, PHP, C# in back-end.
             </div>
           </div>
           <div className="history-content">
@@ -70,7 +71,7 @@ const About = () => {
               </div>
             </div>
             <div className="history-text">
-              This is a content about Vancouver.
+              Now I'm studying web development in college and finding a job in Vancouver. I came to Vancouver because I've wanted to live in other country for a long time and it makes my life more exciting.
             </div>
           </div>
         </div>

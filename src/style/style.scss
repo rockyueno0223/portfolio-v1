@@ -311,8 +311,8 @@ footer{
 
 .about-text {
   width: 60%;
-  font-size: 22px;
-  padding: 80px 40px;
+  padding-left: 8px;
+  padding-right: 8px;
   text-align: left;
 }
 
@@ -327,7 +327,7 @@ footer{
 
 .history-content{
   padding: 5px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 .history-header{
@@ -339,15 +339,20 @@ footer{
   }
 }
 
+.history{
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
 .history-title{
-  font-size: 22px;
+  font-size: 24px;
   padding: 16px;
 }
 
 .history-text{
   text-align: left;
   padding-left: 50px;
-  padding-top: 12px;
+  padding-top: 8px;
 }
 
 .skill-wrapper{
@@ -598,7 +603,11 @@ footer{
 
   .about-text{
     width: 100%;
-    padding: 10px 8px;
+    padding: 10px 0;
+  }
+
+  .history{
+    margin-top: 8px;
   }
 
   .history-text{
