@@ -15,7 +15,7 @@ const Footer = () => {
           </a>
         </div>
         <div className='link-item'>
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/hiroki-ueno-9a6bb4316/" target="_blank" rel="noreferrer">
             <FaLinkedin size={38} />
           </a>
         </div>
