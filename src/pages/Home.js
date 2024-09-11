@@ -53,7 +53,6 @@ const Home = () => {
         })}
       </div>
       <Button title="Work" pass="/work"/>
-      <Contact />
     </>
   )
 }

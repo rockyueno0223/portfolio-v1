@@ -146,7 +146,11 @@ footer{
 
 // Project Thumbnail
 .project-thumbnail{
-  width: 32%;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
 }
 
 .project-thumbnail-img{
@@ -159,20 +163,21 @@ footer{
   }
 }
 
-.project-name{
-  font-size: 24px;
-  font-weight: 600;
+.project-thumbnail-content {
+  font-size: 18px;
+  padding: 18px;
 
-  h4{
-    margin-top: 10px;
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 8px;
     margin-bottom: 0;
   }
-}
 
-.project-thumbnail-content{
-  font-size: 18px;
-  padding: 8px;
-  text-align: left;
+  p{
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 
 // Project Detail
@@ -295,8 +300,8 @@ footer{
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
 }
 
 // About Page
@@ -489,18 +494,13 @@ footer{
 
   // Project Thumbnail
   .project-thumbnail{
-    width: 100%;
-    margin-bottom: 12px;
-  }
-
-  .project-name{
-    h4{
-      margin-top: 4px;
-    }
+    flex-direction: column;
   }
 
   .project-thumbnail-content{
-    padding-top: 2px;
+    h4{
+      margin-top: 0;
+    }
   }
 
   // Project Detail
@@ -577,10 +577,6 @@ footer{
       font-size: 16px;
       color: darken($color: $theme-grey, $amount: 45%);
     }
-  }
-
-  .project-thumbnail-wrapper{
-    flex-direction: column;
   }
 
   // About Page

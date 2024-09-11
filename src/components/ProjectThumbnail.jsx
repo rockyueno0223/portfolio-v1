@@ -8,11 +8,9 @@ const ProjectThumbnail = ({name, img, url, text}) => {
           <img src={img} alt={name} loading='lazy'/>
         </a>
       </div>
-      <div className='project-name'>
-        <h4>{name}</h4>
-      </div>
       <div className='project-thumbnail-content'>
-        {text}
+        <h4>{name}</h4>
+        <p>{text}</p>
       </div>
     </div>
   )
