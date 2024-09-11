@@ -3,10 +3,12 @@ import React from 'react'
 const ProjectDetail = ({ id, name, img, url, skills, text }) => {
   const ProjectDetailContentClass = (({ id }) => {
     let classText = "project-detail-content "
-    if (id % 2 !== 0) {
-      classText += "odd"
-    } else if (id % 2 === 0) {
-      classText += "even"
+    if (id % 3 === 1) {
+      classText += "green"
+    } else if (id % 3 === 2) {
+      classText += "white"
+    } else if (id % 3 === 0) {
+      classText += "grey"
     }
     return classText
   })

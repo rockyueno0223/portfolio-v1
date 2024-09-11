@@ -3,7 +3,6 @@ import React from "react";
 import Label from "../components/Label";
 import Button from "../components/Button";
 import ProjectThumbnail from "../components/ProjectThumbnail";
-import Contact from "../pages/Contact";
 
 import AvatarLink from "../img/about/avatar.png";
 

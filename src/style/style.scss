@@ -184,13 +184,16 @@ footer{
 .project-detail{
   display: flex;
   width: 100%;
-  border-bottom: 1px solid $border-grey;
 
-  .odd{
+  .green{
     background-color: $theme-green;
   }
 
-  .even{
+  .white{
+    background-color: #fffffa;
+  }
+
+  .grey{
     background-color: $theme-grey;
   }
 }
