@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Label from "../components/Label";
 import Button from "../components/Button";
@@ -6,17 +6,31 @@ import ProjectThumbnail from "../components/ProjectThumbnail";
 
 import AvatarLink from "../img/about/avatar.png";
 
-import Work1Img from "../img/sample/sample-work1.png"
-import Work2Img from "../img/sample/sample-work2.png"
-import Work3Img from "../img/sample/sample-work3.png"
-
-const projects = [
-  { name: "Work1", img: Work1Img, url:"#", text: "This is an explanation of work1. Explain about this work such as when, how I made it." },
-  { name: "Work2", img: Work2Img, url:"#", text: "This is an explanation of work2. Explain about this work such as when, how I made it." },
-  { name: "Work3", img: Work3Img, url:"#", text: "This is an explanation of work3. Explain about this work such as when, how I made it." }
-]
-
 const Home = () => {
+  const [projects, setProjects] = useState([])
+
+  useEffect(() => {
+    fetchProjects()
+  }, [])
+
+  const fetchProjects = async () => {
+    try {
+      const response = await fetch("/ProjectData.json")
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const data = await response.json()
+      console.log(data);
+      console.log(data.projects);
+
+      setProjects(data.projects)
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <>
       <div className="main-visual">
@@ -45,9 +59,9 @@ const Home = () => {
       <Button title="About me" pass="/about" />
       <Label title="Work" />
       <div className="project-thumbnail-wrapper">
-        {projects.map(project => {
+        {projects.map((project, index) => {
           return (
-            <ProjectThumbnail key={project.name} name={project.name} img={project.img} url={project.url} text={project.text} />
+            <ProjectThumbnail key={index} project={project} />
           )
         })}
       </div>

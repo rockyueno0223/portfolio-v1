@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Work1",
+      "thumbnail": "sample-work1.png",
+      "url":"#",
+      "skills":["HTML", "CSS"],
+      "description": "This is an explanation of work1. Explain about this work such as when, how I made it."
+    },
+    {
+      "id": 2,
+      "title": "Work2",
+      "thumbnail": "sample-work2.png",
+      "url":"#",
+      "skills":["HTML", "CSS", "JavaScript", "Sass"],
+      "description": "This is an explanation of work2. Explain about this work such as when, how I made it."
+    },
+    {
+      "id": 3,
+      "title": "Work3",
+      "thumbnail": "sample-work3.png",
+      "url":"#",
+      "skills":["HTML", "CSS", "Vue.js"],
+      "description": "This is an explanation of work3. Explain about this work such as when, how I made it."
+    }
+  ]
+}

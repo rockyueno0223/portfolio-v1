@@ -1,7 +1,7 @@
 import React from 'react'
 
-const ProjectDetail = ({ id, name, img, url, skills, text }) => {
-  const ProjectDetailContentClass = (({ id }) => {
+const ProjectDetail = ({ project }) => {
+  const ProjectDetailContentClass = ((id) => {
     let classText = "project-detail-content "
     if (id % 3 === 1) {
       classText += "green"
@@ -13,21 +13,21 @@ const ProjectDetail = ({ id, name, img, url, skills, text }) => {
     return classText
   })
 
-  const skillText = skills.reduce((result, curr) => {
+  const skillText = project.skills.reduce((result, curr) => {
     return `${result} / ${curr}`
   })
 
   return (
     <div className='project-detail'>
       <div className='project-detail-img'>
-        <a href={url} target="_blank" rel="noreferrer">
-            <img src={img} alt={name} loading='lazy'/>
-          </a>
+        <a href={project.url} target="_blank" rel="noreferrer">
+          <img src={`/images/sample/${project.thumbnail}`} alt={project.title} loading='lazy'/>
+        </a>
       </div>
-      <div className={ProjectDetailContentClass({id})}>
-        <h4 className='title'>{name}</h4>
+      <div className={ProjectDetailContentClass(project.id)}>
+        <h4 className='title'>{project.title}</h4>
         <p className='skills'>{skillText}</p>
-        <p className='text'>{text}</p>
+        <p className='text'>{project.description}</p>
       </div>
     </div>
   )
