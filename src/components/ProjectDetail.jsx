@@ -13,9 +13,7 @@ const ProjectDetail = ({ project }) => {
     return classText
   })
 
-  const skillText = project.skills.reduce((result, curr) => {
-    return `${result} / ${curr}`
-  })
+  const skillText = project.skills.join(' / ')
 
   return (
     <div className='project-detail'>

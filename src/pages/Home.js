@@ -4,8 +4,6 @@ import Label from "../components/Label";
 import Button from "../components/Button";
 import ProjectThumbnail from "../components/ProjectThumbnail";
 
-import AvatarLink from "../img/about/avatar.png";
-
 const Home = () => {
   const [projects, setProjects] = useState([])
 
@@ -22,9 +20,6 @@ const Home = () => {
       }
 
       const data = await response.json()
-      console.log(data);
-      console.log(data.projects);
-
       setProjects(data.projects)
     } catch (error) {
       console.error(error);
@@ -52,7 +47,7 @@ const Home = () => {
             </div>
           </div>
           <div className="home-about-img">
-            <img src={AvatarLink} alt="avatar" loading="lazy"/>
+            <img src={'/images/about/avatar.png'} alt="Avatar" loading="lazy"/>
           </div>
         </div>
       </div>

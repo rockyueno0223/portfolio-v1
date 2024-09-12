@@ -155,7 +155,7 @@ footer{
 
 .project-thumbnail-img{
   width: 100%;
-  border: 1px solid $border-grey;
+  border: .5px solid $border-grey;
 
   img{
     display: block;
@@ -315,9 +315,15 @@ footer{
 
 .about-text {
   width: 60%;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: left;
+  display: flex;
+  align-items: center;
+
+  p{
+    margin: 0;
+  }
 }
 
 .about-img {
@@ -390,7 +396,7 @@ footer{
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  border: 1px solid $border-grey;
+  border: .5px solid $border-grey;
 }
 
 // Blog Page
@@ -509,6 +515,7 @@ footer{
   // Project Detail
   .project-detail{
     flex-direction: column;
+    border: .5px solid $border-grey;
   }
 
   .project-detail-img{
@@ -628,6 +635,8 @@ footer{
   // Work Page
   .project-detail-wrapper{
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 50px;
+    border: none;
+    gap: 12px;
   }
 }

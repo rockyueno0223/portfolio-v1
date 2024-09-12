@@ -23,8 +23,6 @@ import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 
-import AboutImg from "../img/about/aboutme.jpg";
-
 const About = () => {
   return (
     <>
@@ -32,12 +30,14 @@ const About = () => {
       <div className="container">
         <div className="profile">
           <div className="about-text">
-            I'm a front-end engineer who have work experience of back-end development and eager to learn new technologies.<br />
-            I'm happy to this job because I like to make something useful or convenient and make people's lives better. Also, learning new technologies is really interesting for me.<br />
-            I'd love to travel foreign countries. I've visited 16 countries and want more. I'm always exploring something new!
+            <p>
+              I'm a front-end engineer who have work experience of back-end development and eager to learn new technologies.<br />
+              I'm happy to this job because I like to make something useful or convenient and make people's lives better. Also, learning new technologies is really interesting for me.<br />
+              I'd love to travel foreign countries. I've visited 16 countries and want more. I'm always exploring something new!
+            </p>
           </div>
           <div className="about-img">
-            <img src={AboutImg} alt="about me" loading="lazy"/>
+            <img src={'/images/about/about-me.jpg'} alt="About Me" loading="lazy"/>
           </div>
         </div>
         <div className="history">

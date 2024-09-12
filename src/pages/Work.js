@@ -19,9 +19,6 @@ const Work = () => {
       }
 
       const data = await response.json()
-      console.log(data);
-      console.log(data.projects);
-
       setProjects(data.projects)
     } catch (error) {
       console.error(error);
