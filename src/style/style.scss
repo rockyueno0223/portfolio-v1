@@ -185,21 +185,28 @@ footer{
   display: flex;
   width: 100%;
 
-  .green{
+  &.green{
     background-color: $theme-green;
   }
 
-  .white{
+  &.white{
     background-color: #fffffa;
   }
 
-  .grey{
+  &.grey{
     background-color: $theme-grey;
   }
 }
 
 .project-detail-img {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a{
+    width: 100%;
+  }
 
   img {
     display: block;
@@ -209,28 +216,27 @@ footer{
 
 .project-detail-content {
   width: 50%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 24px;
   text-align: left;
 
-  .title, .skills{
-    text-align: center;
-  }
-
   .title{
-    margin-top: 40px;
-    margin-bottom: 16px;
-    font-size: 36px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 24px;
     font-weight: normal;
   }
 
   .skills{
     font-size: 14px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 8px;
   }
 
   .text{
-    font-size: 18px;
-    margin-top: 30px;
+    font-size: 14px;
+    color: rgb(55 65 81);
+    margin-top: 0;
   }
 }
 
@@ -524,6 +530,12 @@ footer{
 
   .project-detail-content{
     width: 100%;
+    padding: 0 16px;
+
+    .title,
+    .skills {
+      text-align: center;
+    }
 
     .title{
       font-size: 22px;
@@ -536,6 +548,7 @@ footer{
     }
 
     .text{
+      font-size: 12px;
       margin-top: 0;
       margin-bottom: 24px;
     }
@@ -634,7 +647,6 @@ footer{
 
   // Work Page
   .project-detail-wrapper{
-    width: 80%;
     margin: 0 auto 50px;
     border: none;
     gap: 12px;
