@@ -21,7 +21,7 @@ const ProjectDetail = ({ project }) => {
     <div className={ProjectDetailClass(project.id)}>
       <div className='project-detail-img'>
         <a href={project.url} target="_blank" rel="noreferrer">
-          <img src={`/images/sample/${project.thumbnail}`} alt={project.title} loading='lazy'/>
+          <img src={`/images/portfolio/${project.thumbnail}`} alt={project.title} loading='lazy'/>
         </a>
       </div>
       <div className='project-detail-content'>
@@ -30,13 +30,13 @@ const ProjectDetail = ({ project }) => {
         <p className='text'>{project.description}</p>
         <div className="link">
           <span>
-            <a href="#">
+            <a href={project.url} target="_blank" rel="noreferrer">
               Link
               <FaExternalLinkAlt size={12} />
             </a>
           </span>
           <span>
-            <a href="#">
+            <a href={project.github} target="_blank" rel="noreferrer">
               GitHub
               <FaGithub size={14} />
             </a>

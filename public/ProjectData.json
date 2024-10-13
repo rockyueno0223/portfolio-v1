@@ -2,27 +2,66 @@
   "projects": [
     {
       "id": 1,
-      "title": "Work1",
-      "thumbnail": "sample-work1.png",
-      "url":"#",
-      "skills":["HTML", "CSS"],
-      "description": "This is an explanation of work1. Explain about this work such as when, how I made it."
+      "title": "Travel Memory",
+      "thumbnail": "travel-memory.png",
+      "url":"https://travel-memory.vercel.app",
+      "github":"https://github.com/rockyueno0223/travel-memory",
+      "skills":["Next.js", "Supabase", "Typescript", "Tailwind"],
+      "description": "An app to save photos and comments of travels by country using Supabase. Users can see of which countries they save memories in a world map."
     },
     {
       "id": 2,
-      "title": "Work2",
-      "thumbnail": "sample-work2.png",
-      "url":"#",
-      "skills":["HTML", "CSS", "JavaScript", "Sass"],
-      "description": "This is an explanation of work2. Explain about this work such as when, how I made it."
+      "title": "Trend Flicks",
+      "thumbnail": "trend-flicks.png",
+      "url":"https://rockyueno0223.github.io/trend-flicks/",
+      "github":"https://github.com/rockyueno0223/trend-flicks",
+      "skills":["React", "Tailwind"],
+      "description": "Website to search trending movies and TV shows."
     },
     {
       "id": 3,
-      "title": "Work3",
-      "thumbnail": "sample-work3.png",
+      "title": "Stock Chart",
+      "thumbnail": "stock-chart.png",
+      "url":"https://rockyueno0223.github.io/stock-chart/",
+      "github":"https://github.com/rockyueno0223/stock-chart",
+      "skills":["Vue.js"],
+      "description": "Website to show stock market price."
+    },
+    {
+      "id": 4,
+      "title": "Portfolio",
+      "thumbnail": "portfolio.png",
       "url":"#",
+      "github":"#",
+      "skills":["React", "Sass", "Javascript"],
+      "description": "This portfolio."
+    },
+    {
+      "id": 5,
+      "title": "GSAP Portfolio",
+      "thumbnail": "gsap-portfolio.png",
+      "url":"https://rockyueno0223.github.io/gsap-portfolio/",
+      "github":"https://github.com/rockyueno0223/gsap-portfolio",
+      "skills":["Javascript", "GSAP"],
+      "description": "I created this website to practice GSAP."
+    },
+    {
+      "id": 6,
+      "title": "Todo Board",
+      "thumbnail": "todo-board.png",
+      "url":"https://rockyueno0223.github.io/todo-board/",
+      "github":"https://github.com/rockyueno0223/todo-board",
+      "skills":["React"],
+      "description": "Simple todo app to create, edit, and delete todos."
+    },
+    {
+      "id": 7,
+      "title": "Weather App",
+      "thumbnail": "weather-app.png",
+      "url":"https://rockyueno0223.github.io/weather-app/",
+      "github":"https://github.com/rockyueno0223/weather-app",
       "skills":["HTML", "CSS", "Vue.js"],
-      "description": "This is an explanation of work3. Explain about this work such as when, how I made it."
+      "description": "An app to search and show temperature of the city."
     }
   ]
 }

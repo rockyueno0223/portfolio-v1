@@ -211,6 +211,10 @@ footer{
   img {
     display: block;
     width: 100%;
+
+    &:hover{
+      opacity: .9;
+    }
   }
 }
 
@@ -250,6 +254,10 @@ footer{
       display: flex;
       align-items: center;
       gap: 4px;
+
+      &:hover{
+        border-bottom: 1px solid;
+      }
     }
   }
 }
