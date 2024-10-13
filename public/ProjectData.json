@@ -31,8 +31,8 @@
       "id": 4,
       "title": "Portfolio",
       "thumbnail": "portfolio.png",
-      "url":"#",
-      "github":"#",
+      "url":"https://rockyueno0223.github.io/portfolio-v1/",
+      "github":"https://github.com/rockyueno0223/portfolio-v1",
       "skills":["React", "Sass", "Javascript"],
       "description": "This portfolio."
     },
