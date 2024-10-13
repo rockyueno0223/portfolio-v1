@@ -237,6 +237,20 @@ footer{
     font-size: 14px;
     color: rgb(55 65 81);
     margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .link{
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 12px;
+
+    span a{
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
   }
 }
 
@@ -550,7 +564,6 @@ footer{
     .text{
       font-size: 12px;
       margin-top: 0;
-      margin-bottom: 24px;
     }
   }
 

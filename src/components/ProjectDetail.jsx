@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectDetail = ({ project }) => {
   const ProjectDetailClass = ((id) => {
@@ -26,6 +28,20 @@ const ProjectDetail = ({ project }) => {
         <h4 className='title'>{project.title}</h4>
         <p className='skills'>{skillText}</p>
         <p className='text'>{project.description}</p>
+        <div className="link">
+          <span>
+            <a href="#">
+              Link
+              <FaExternalLinkAlt size={12} />
+            </a>
+          </span>
+          <span>
+            <a href="#">
+              GitHub
+              <FaGithub size={14} />
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   )
