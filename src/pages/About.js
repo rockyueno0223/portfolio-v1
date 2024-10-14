@@ -37,7 +37,7 @@ const About = () => {
             </p>
           </div>
           <div className="about-img">
-            <img src={`${process.env.PUBLIC_URL}/images/about/about-me.jpg'`} alt="About Me" loading="lazy"/>
+            <img src={`${process.env.PUBLIC_URL}/images/about/about-me.jpg`} alt="About Me" loading="lazy"/>
           </div>
         </div>
         <div className="history">
