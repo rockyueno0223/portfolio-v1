@@ -13,7 +13,7 @@ const Home = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch("/ProjectData.json")
+      const response = await fetch(`${process.env.PUBLIC_URL}/ProjectData.json`)
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
