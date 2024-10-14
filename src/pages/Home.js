@@ -54,7 +54,7 @@ const Home = () => {
       <Button title="About me" pass="/about" />
       <Label title="Work" />
       <div className="project-thumbnail-wrapper">
-        {projects.map((project, index) => {
+        {projects.slice(0, 3).map((project, index) => {
           return (
             <ProjectThumbnail key={index} project={project} />
           )
