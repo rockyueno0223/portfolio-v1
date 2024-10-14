@@ -21,7 +21,7 @@ const ProjectDetail = ({ project }) => {
     <div className={ProjectDetailClass(project.id)}>
       <div className='project-detail-img'>
         <a href={project.url} target="_blank" rel="noreferrer">
-          <img src={`/images/portfolio/${project.thumbnail}`} alt={project.title} loading='lazy'/>
+          <img src={`${process.env.PUBLIC_URL}/images/portfolio/${project.thumbnail}`} alt={project.title} loading='lazy'/>
         </a>
       </div>
       <div className='project-detail-content'>

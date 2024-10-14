@@ -47,7 +47,7 @@ const Home = () => {
             </div>
           </div>
           <div className="home-about-img">
-            <img src={'/images/about/avatar.png'} alt="Avatar" loading="lazy"/>
+            <img src={`${process.env.PUBLIC_URL}/images/about/avatar.png'`} alt="Avatar" loading="lazy"/>
           </div>
         </div>
       </div>

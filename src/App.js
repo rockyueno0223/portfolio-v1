@@ -13,7 +13,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/portfolio-v1'>
         <Header />
         {/* <Link to="/">Home</Link> | <Link to="/about">About</Link> */}
         <Routes>
