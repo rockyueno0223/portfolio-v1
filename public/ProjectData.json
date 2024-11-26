@@ -20,6 +20,15 @@
     },
     {
       "id": 3,
+      "title": "Post Now!",
+      "thumbnail": "post-now.png",
+      "url":"https://post-now-production.up.railway.app",
+      "github":"https://github.com/rockyueno0223/post-now",
+      "skills":["PHP", "Laravel", "Bootstrap", "MySQL"],
+      "description": "This is a kind of social media to post messages. Users can post and other users can see them. User can follow other users and posts of following users show on dashboard."
+    },
+    {
+      "id": 4,
       "title": "Trend Flicks",
       "thumbnail": "trend-flicks.png",
       "url":"https://rockyueno0223.github.io/trend-flicks/",
@@ -28,7 +37,7 @@
       "description": "Website to search trending movies and TV shows."
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Stock Chart",
       "thumbnail": "stock-chart.png",
       "url":"https://rockyueno0223.github.io/stock-chart/",
@@ -37,7 +46,7 @@
       "description": "Website to show stock market price."
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Portfolio",
       "thumbnail": "portfolio.png",
       "url":"https://rockyueno0223.github.io/portfolio-v1/",
@@ -46,7 +55,7 @@
       "description": "This portfolio."
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "GSAP Portfolio",
       "thumbnail": "gsap-portfolio.png",
       "url":"https://rockyueno0223.github.io/gsap-portfolio/",
@@ -55,7 +64,7 @@
       "description": "I created this website to practice GSAP."
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Todo Board",
       "thumbnail": "todo-board.png",
       "url":"https://rockyueno0223.github.io/todo-board/",
@@ -64,7 +73,7 @@
       "description": "Simple todo app to create, edit, and delete todos."
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Weather App",
       "thumbnail": "weather-app.png",
       "url":"https://rockyueno0223.github.io/weather-app/",
