@@ -11,16 +11,24 @@ import { SiSass } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiJquery } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoVue } from "react-icons/io5";
+import { SiRedux } from "react-icons/si";
+import { SiShadcnui } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
 import { SiPhp } from "react-icons/si";
 import { FaLaravel } from "react-icons/fa";
 import { RiJavaLine } from "react-icons/ri";
-import { SiMysql } from "react-icons/si";
+import { SiPrisma } from "react-icons/si";
+import { SiSupabase } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
 import { SiMongodb } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 
 const About = () => {
@@ -31,9 +39,15 @@ const About = () => {
         <div className="profile">
           <div className="about-text">
             <p>
-              I'm a front-end engineer who have work experience of back-end development and eager to learn new technologies.<br />
-              I'm happy to this job because I like to make something useful or convenient and make people's lives better. Also, learning new technologies is really interesting for me.<br />
-              I'd love to travel foreign countries. I've visited 16 countries and want more. I'm always exploring something new!
+              <span>
+                &nbsp;I'm a front-end engineer who have work experience of back-end development and eager to learn new technologies.
+              </span>
+              <span>
+                &nbsp;I'm happy to this job because I like to make something useful or convenient and make people's lives better. Also, learning new technologies is really interesting for me.
+              </span>
+              <span>
+                &nbsp;I'd love to travel foreign countries. I've visited 16 countries and want more. I'm always exploring something new!
+              </span>
             </p>
           </div>
           <div className="about-img">
@@ -49,7 +63,7 @@ const About = () => {
               </div>
             </div>
             <div className="history-text">
-              I majored in International politics and relationship in university because I wanted to study International issues. Also, I joined English drama club and performed plays. I thought I wanted to live in other country from this time.
+              &nbsp;I majored in International politics and relationship in university because I wanted to study International issues. Also, I joined English drama club and performed plays. I thought I wanted to live in other country from this time.
             </div>
           </div>
           <div className="history-content">
@@ -60,7 +74,7 @@ const About = () => {
               </div>
             </div>
             <div className="history-text">
-              I worked for a software company in Japan as a back-end engineer. I used HTML, CSS, JavaScript, Vue.js in front-end, and Java, PHP, C# in back-end.
+              &nbsp;I worked for a software company in Japan as a back-end engineer. I used HTML, CSS, JavaScript, Vue.js in front-end, and Java, PHP, C# in back-end.
             </div>
           </div>
           <div className="history-content">
@@ -71,7 +85,7 @@ const About = () => {
               </div>
             </div>
             <div className="history-text">
-              Now I'm studying web development in college and finding a job in Vancouver. I came to Vancouver because I've wanted to live in other country for a long time and it makes my life more exciting.
+              &nbsp;Now I'm studying web development in college and finding a job in Vancouver. I came to Vancouver because I've wanted to live in other country for a long time and it makes my life more exciting.
             </div>
           </div>
         </div>
@@ -79,76 +93,50 @@ const About = () => {
       <Label title="Skills" />
       <div className="container">
         <div className="skill-wrapper">
-          <div className="skill-row">
-            <div className="skill-item">
-              <FaHtml5 size={24}/>
-              <div className="skill-name">HTML</div>
-            </div>
-            <div className="skill-item">
-              <FaCss3Alt size={24}/>
-              <div className="skill-name">CSS</div>
-            </div>
-            <div className="skill-item">
-              <SiSass size={24}/>
-              <div className="skill-name">SASS</div>
-            </div>
-            <div className="skill-item">
-              <SiTailwindcss size={24}/>
-              <div className="skill-name">Tailwind</div>
-            </div>
-            <div className="skill-item">
-              <FaBootstrap size={24}/>
-              <div className="skill-name">Bootstrap</div>
-            </div>
-            <div className="skill-item">
-              <IoLogoJavascript size={24}/>
-              <div className="skill-name">JavaScript</div>
-            </div>
-            <div className="skill-item">
-              <SiTypescript size={24}/>
-              <div className="skill-name">TypeScript</div>
-            </div>
-            <div className="skill-item">
-              <FaReact size={24}/>
-              <div className="skill-name">React</div>
-            </div>
-            <div className="skill-item">
-              <RiNextjsFill size={24}/>
-              <div className="skill-name">Next.js</div>
+          <div className="skill-section">
+            <p className="skill-section-title">
+              Languages
+            </p>
+            <div className="skill-section-inner">
+              <span><FaHtml5 size={24}/></span>
+              <span><FaCss3Alt size={24}/></span>
+              <span><IoLogoJavascript size={24}/></span>
+              <span><BiLogoTypescript size={24}/></span>
+              <span><SiPhp size={24}/></span>
+              <span><RiJavaLine size={24} /></span>
             </div>
           </div>
-          <div className="skill-row">
-            <div className="skill-item">
-              <IoLogoVue size={24}/>
-              <div className="skill-name">Vue.js</div>
+          <div className="skill-section">
+            <p className="skill-section-title">
+              Frameworks & Libraries
+            </p>
+            <div className="skill-section-inner">
+              <span><SiTailwindcss size={24}/></span>
+              <span><FaReact size={24}/></span>
+              <span><RiNextjsFill size={24}/></span>
+              <span><IoLogoVue size={24} /></span>
+              <span><SiRedux size={24}/></span>
+              <span><SiShadcnui size={24}/></span>
+              <span><TbBrandFramerMotion size={24} /></span>
+              <span><SiPrisma size={24}/></span>
+              <span><FaNodeJs size={24}/></span>
+              <span><SiExpress size={24} /></span>
+              <span><FaLaravel size={24} /></span>
+              <span><SiSass size={24} /></span>
+              <span><FaBootstrap size={24} /></span>
+              <span><SiJquery size={24}/></span>
             </div>
-            <div className="skill-item">
-              <FaNodeJs size={24}/>
-              <div className="skill-name">Node.js</div>
-            </div>
-            <div className="skill-item">
-              <SiPhp size={24}/>
-              <div className="skill-name">PHP</div>
-            </div>
-            <div className="skill-item">
-              <FaLaravel size={24}/>
-              <div className="skill-name">Laravel</div>
-            </div>
-            <div className="skill-item">
-              <RiJavaLine size={24}/>
-              <div className="skill-name">Java</div>
-            </div>
-            <div className="skill-item">
-              <SiMysql size={24}/>
-              <div className="skill-name">MySQL</div>
-            </div>
-            <div className="skill-item">
-              <SiMongodb size={24}/>
-              <div className="skill-name">MongoDB</div>
-            </div>
-            <div className="skill-item">
-              <SiPostgresql size={24}/>
-              <div className="skill-name">PostgreSQL</div>
+          </div>
+          <div className="skill-section">
+            <p className="skill-section-title">
+              DB & SaaS
+            </p>
+            <div className="skill-section-inner">
+              <span><SiSupabase size={24}/></span>
+              <span><IoLogoFirebase size={24}/></span>
+              <span><SiMongodb size={24}/></span>
+              <span><SiMysql size={24}/></span>
+              <span><SiPostgresql size={24}/></span>
             </div>
           </div>
         </div>

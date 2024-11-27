@@ -3,7 +3,7 @@
 }
 
 body{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 a {
@@ -68,16 +68,17 @@ nav{
     padding-bottom: 24px;
 
     li {
-      font-weight: bold;
+      font-size: 20px;
+      font-weight: 500;
 
       a{
         display: block;
         width: max-content;
         margin: 0 1rem;
-        border-bottom: 2px solid $theme-green;
+        border-bottom: 1.5px solid $theme-green;
 
         &:hover{
-          border-bottom: 2px solid black;
+          border-bottom: 1.5px solid black;
         }
       }
     }
@@ -140,6 +141,7 @@ footer{
   }
 
   p{
+    font-size: 20px;
     line-height: 64px;
   }
 }
@@ -280,7 +282,8 @@ footer{
 
 .title{
   h2{
-    font-size: 36px;
+    font-size: 30px;
+    font-weight: normal;
   }
   h1{
     font-size: 88px;
@@ -304,13 +307,12 @@ footer{
   text-align: left;
 
   .my-name{
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 38px;
     margin-bottom: 30px;
   }
 
   .text{
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .skills{
@@ -354,6 +356,9 @@ footer{
 
   p{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 }
 
@@ -398,17 +403,27 @@ footer{
 
 .skill-wrapper{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 18px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 28px;
+  width: 100%;
   margin-bottom: 36px;
 }
 
-.skill-row{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.skill-section{
+  max-width: 212px;
   margin-bottom: 16px;
+
+  &-title{
+    font-size: 18px;
+  }
+
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
 }
 
 .skill-item{
@@ -465,10 +480,6 @@ footer{
 }
 
 @media screen and (max-width: 767px) {
-  body{
-    font-size: 18px;
-  }
-
   // Components
 
   // Header
@@ -530,6 +541,22 @@ footer{
   .label{
     margin-top: 40px;
     margin-bottom: 40px;
+
+    h3{
+      font-size: 24px;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  // Button
+  .button{
+    width: 260px;
+    height: 54px;
+
+    p {
+      font-size: 18px;
+      line-height: 54px;
+    }
   }
 
   // Project Thumbnail
@@ -594,12 +621,11 @@ footer{
 
   .title {
     h2 {
-      font-size: 24px;
-      font-weight: normal;
+      font-size: 22px;
     }
 
     h1 {
-      font-size: 44px;
+      font-size: 40px;
     }
   }
 
@@ -617,18 +643,19 @@ footer{
     padding-top: 20px;
 
     .my-name {
-      font-size: 38px;
+      font-size: 34px;
       margin-top: 0;
       margin-bottom: 0;
     }
 
     .text {
+      font-size: 18px;
       margin-top: 18px;
       margin-bottom: 18px;
     }
 
     .skills {
-      font-size: 16px;
+      font-size: 14px;
       color: darken($color: $theme-grey, $amount: 45%);
     }
   }
@@ -661,19 +688,19 @@ footer{
   }
 
   .skill-wrapper{
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
   }
 
-  .skill-row{
-    flex-direction: column;
+  .skill-section{
+    max-width: 100%;
     margin-left: 10px;
     margin-right: 10px;
-  }
 
-  .skill-item{
-    margin-bottom: 10px;
+    &-inner{
+      justify-content: center;
+    }
   }
 
   // Work Page
