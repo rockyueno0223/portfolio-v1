@@ -541,6 +541,22 @@ footer{
   .label{
     margin-top: 40px;
     margin-bottom: 40px;
+
+    h3{
+      font-size: 24px;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  // Button
+  .button{
+    width: 260px;
+    height: 54px;
+
+    p {
+      font-size: 18px;
+      line-height: 54px;
+    }
   }
 
   // Project Thumbnail
@@ -605,11 +621,11 @@ footer{
 
   .title {
     h2 {
-      font-size: 24px;
+      font-size: 22px;
     }
 
     h1 {
-      font-size: 44px;
+      font-size: 40px;
     }
   }
 
