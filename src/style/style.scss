@@ -403,17 +403,27 @@ footer{
 
 .skill-wrapper{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 18px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 28px;
+  width: 100%;
   margin-bottom: 36px;
 }
 
-.skill-row{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.skill-section{
+  max-width: 212px;
   margin-bottom: 16px;
+
+  &-title{
+    font-size: 18px;
+  }
+
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
 }
 
 .skill-item{
@@ -662,19 +672,19 @@ footer{
   }
 
   .skill-wrapper{
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
   }
 
-  .skill-row{
-    flex-direction: column;
+  .skill-section{
+    max-width: 100%;
     margin-left: 10px;
     margin-right: 10px;
-  }
 
-  .skill-item{
-    margin-bottom: 10px;
+    &-inner{
+      justify-content: center;
+    }
   }
 
   // Work Page
