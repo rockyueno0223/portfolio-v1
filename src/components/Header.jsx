@@ -27,6 +27,9 @@ const Header = () => {
         animate={location.pathname === "/" ? "visible" : false}
         variants={headerVariants}
       >
+        <Link to="/" className='logo'>
+          <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Rocky" />
+        </Link>
         <div className={`menu ${menuOpen ? "open" : ""}`} onClick={() => {
           setMenuOpen(!menuOpen);
         }}>
