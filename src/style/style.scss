@@ -4,6 +4,7 @@
 
 body{
   font-size: 16px;
+  text-align: center;
 }
 
 a {
@@ -35,6 +36,7 @@ header{
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: $theme-green;
 }
 
 .menu{
@@ -58,9 +60,18 @@ header{
 
 nav{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: $theme-green;
+  padding: 0 14px;
+
+  .logo{
+    height: 48px;
+
+    img{
+      height: 100%;
+      width: auto;
+    }
+  }
 
   ul {
     display: flex;
@@ -506,6 +517,10 @@ footer{
       top: 0.75rem;
       transform: rotate(-45deg);
     }
+  }
+
+  header{
+    padding: 5px 0;
   }
 
   nav{
