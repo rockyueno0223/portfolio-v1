@@ -5,10 +5,20 @@ import ProjectDetail from "../components/ProjectDetail";
 
 const Work = () => {
   const [projects, setProjects] = useState([])
+  const [filteredProjects, setFilteredProjects] = useState([])
+  const [projectType, setProjectType] = useState("featured")
 
   useEffect(() => {
     fetchProjects()
   }, [])
+
+  useEffect(() => {
+    if (projectType === "featured") {
+      setFilteredProjects(projects.filter(project => project.isFeatured))
+    } else if (projectType === "all") {
+      setFilteredProjects(projects)
+    }
+  }, [projects, projectType])
 
   const fetchProjects = async () => {
     try {
@@ -28,9 +38,19 @@ const Work = () => {
   return (
     <>
       <Label title="Work" />
-      <div className="container">
+      <div className="container work-page-wrapper">
+        <div className="work-page-header">
+          <select
+            name="project-type"
+            id="project-type"
+            onChange={(e) => setProjectType(e.target.value)}
+          >
+            <option value="featured">Featured Projects</option>
+            <option value="all">All Projects</option>
+          </select>
+        </div>
         <div className="project-detail-wrapper">
-          {projects.map((project, index) => {
+          {filteredProjects.map((project, index) => {
           return (
             <ProjectDetail key={index} project={project} />
           )

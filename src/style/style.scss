@@ -448,6 +448,25 @@ footer{
 }
 
 // Work Page
+.work-page-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.work-page-header{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  #project-type{
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border-color: $border-grey;
+  }
+}
+
 .project-detail-wrapper {
   width: 100%;
   display: flex;

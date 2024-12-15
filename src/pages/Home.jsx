@@ -7,7 +7,7 @@ import ProjectThumbnail from "../components/ProjectThumbnail";
 import { motion } from "framer-motion";
 
 const Home = () => {
-  const [projects, setProjects] = useState([])
+  const [featuredProjects, setFeaturedProjects] = useState([])
 
   useEffect(() => {
     fetchProjects()
@@ -22,7 +22,7 @@ const Home = () => {
       }
 
       const data = await response.json()
-      setProjects(data.projects)
+      setFeaturedProjects(data.projects.filter(project => project.isFeatured))
     } catch (error) {
       console.error(error);
     }
@@ -82,7 +82,7 @@ const Home = () => {
       <Button title="About me" pass="/about" />
       <Label title="Work" />
       <div className="project-thumbnail-wrapper">
-        {projects.slice(0, 3).map((project, index) => {
+        {featuredProjects.map((project, index) => {
           return (
             <ProjectThumbnail key={index} project={project} />
           )
